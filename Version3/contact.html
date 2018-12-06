@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf">
+        <title>Lifestyle blog |Blessed </title>
+        <!---to  even out differences for interperation of different browsers-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/table.css">
+        <link rel="stylesheet" href="css/email.css">
+        
+        
+
+        <!---Measures the sizes of the sceen,"viewing them, used for responsiveness!"-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <!---Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Changa+One|Open+Sans" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header id="top" > 
+            <!-- <a href= "index.html" id = "logo"> 
+                <h1> Mercedes portfolio </h1>
+                <h2> Fashion Designer</h2>
+            </a> -->
+
+
+            <a href="index.html"><img class="mainlogo" src="img/blessed_logo.svg" alt="logo"></a>
+                <h1 class="tagline">For Millenials, By Millenials</h1>
+                
+
+            <nav> 
+                <ul class="mainnav">
+                    <li><a href= "index.html"  >Homepage</a></li>
+                    <li><a href= "style.html">Style</a></li>
+                    <li><a href= "about.html">About</a></li>
+                    <li><a href= "contact.html" class= "selected">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id= "wrapper2"> 
+
+         <section id="primary">
+            <h3>Contact us</h3>
+            
+            <!---ARIA !-->
+            <div class="container">
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+
+
+                  <label for="country">Email to</label>
+                  <select id="country" name="country">
+                    <option value="australia">Carmen</option>
+                    <option value="canada">Charles</option>
+                    <option value="usa">Pamoe</option>
+                    <option value="usa">Maaike </option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+            
+         </section>
+         <section id="secondary">
+             <!---Fill in other data!-->
+            <h3>Contact details</h3>
+           
+            <table>
+
+                <!-- caption lets screen readers read what the table is about vs announcing each column-->
+                
+                     
+                
+                
+                
+                <!-- thead and tbody good for accessibility screen readers. tells browser that the row describes the data in the columns --> 
+                <!-- tfoot contains sums, totals, source of data, copyright, etc. It goes between thead and tbody for some reason --> 
+                
+                      <thead>
+                
+                
+                <!-- th is table header, tells browser and screen readers that this describes the columns, it is not data itself
+                     scope="col" to associate that data with the data below it in the column
+                     scope="row" to associate that data with the data next to it in the row
+                 -->
+                
+                        <tr>
+                          <th scope="col">Name</th>
+                          <th scope="col">E-mail</th>  
+                          <th scope="col">Job role</th>    
+                        </tr>
+                
+                      </thead>
+                
+                      <tfoot>
+                
+                    <!-- colspan tells you how many columns this element is able to be placed across. Made so that the footer doesnt cause a column to expand in width which looks bad -->
+                
+                        
+                      </tfoot>
+                
+                      <tbody>
+                
+                         <tr>
+                          <th scope="row">Charles Hu</th>
+                          <td>charles@example.com</td>  
+                          <td>Designer</td>    
+                        </tr>
+                
+                         <tr>
+                          <th scope="row">Maaike</th>
+                          <td>maaike@example.com</td>  
+                          <td>Designer</td>    
+                        </tr>
+                
+                         <tr>
+                          <th scope="row">Pourma</th>
+                          <td>pourma@example.com</td>  
+                          <td>Designer</td>    
+                        </tr>
+                
+                         <tr>
+                          <th scope="row">Carmen</th>
+                          <td>carmen@example.com</td>  
+                          <td>Designer</td>    
+                        </tr>
+                
+                      </tbody>
+                
+                    </table>
+         </section>
+        
+
+         <footer id="main-footer">
+
+                <form class="subscribe">    
+                    <h2>Subscribe</h2>
+                    <p>Enter your email for the best content every week. No spam, ever</p>
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" name="user_email">
+                   <button type="submit">Subscribe to newsletter</button>
+                </form>
+       
+       
+       
+              <!--- TODO: addd icons--> 		
+                
+                   <p>For Millenials, By Millenials</p>
+                   <p><small>&copy; 2018 #blessed</small></p>
+       
+                   <!-- use id attribute to determine where same page link should go -->
+       
+                <!-- <a href="#top" class="backtotop"> Back to Top</a> -->
+               </footer>
+                        
+      
+    </body>
+</html>

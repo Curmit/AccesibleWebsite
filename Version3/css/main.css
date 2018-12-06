@@ -1,0 +1,394 @@
+/*****************
+styling of main page
+*******************/
+
+
+/*****************
+GENERAL
+*******************/
+
+/* Web fonts ------*/ 
+@import url('https://fonts.googleapis.com/css?family=Cardo');
+
+*{ 
+    box-sizing:border-box; 
+    
+    }
+    
+
+body{
+    font-family: 'Cardo', serif;
+	font-size: 1em;
+	line-height: 1.5;
+
+}
+
+
+/* h1{
+    /* // font-family: 'Open Sans', sans-serif; */
+    /* margin: 15 px 0;
+     font-size: 1.75em;
+     font-weight: normal;
+     line-height: 0.8em; /*spacing between text*/
+  
+ /* }  */
+
+ /*****************
+HEADER
+*******************/
+  
+header{
+float:left;
+margin: 0 0 30px 0;
+padding: 5 px 0 0 0;
+width:100%; /* to remove the effect from the flaoting*/
+
+}
+
+
+/*****************
+NAVIGATION
+*******************/
+
+
+#top {
+	border-bottom: 1px solid #eaeaea;
+}
+.mainlogo {
+	margin:auto;
+	margin-top:3rem;
+	display:block;
+	padding-top:1rem;
+
+}
+
+/*ssubtitle*/
+.tagline {
+	text-align:center;
+	font-size:1.5rem;
+}
+
+
+.mainnav {
+	 text-align:center; 
+}
+
+.mainnav ul {
+	display:inline-block;
+}
+
+nav ul li { 
+	display:inline-block;
+	padding:0 12px;
+	 }
+
+ /*****************
+FOOTER
+*******************/
+
+.subscribe {
+	margin-top:100px;
+	width:100%;
+	background-color:#EFEFEF;
+	height: 300px;
+	text-align:center;
+    padding-top:10px;
+  
+}
+
+ footer{
+   /* font-size: 0.75em;*/
+    text-align: center;
+    clear:both;
+    padding-top: 50px;
+    color:#000000;
+    list-style: none;
+   
+} 
+
+
+
+
+/*****************
+HOMEGPAGE
+*******************/
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	background-color:eaeaea;
+	max-width: 960px;
+}
+
+
+#wrapper2 {
+    max-width: 940px;
+    margin: 0 auto ;
+    padding: 0 5%;
+ 
+ }
+
+
+
+main {
+	margin-top: 100px;
+}
+
+
+.stay_blessed {
+	margin-bottom:60px;
+	padding-bottom:20px;
+	text-align:center;
+	border-bottom:1px solid #d8d8d8;
+	font-size: 2rem;
+}
+
+.backtotop{
+	font-size: 0.8rem;
+}
+
+/* Floated Columns */
+
+.craftbeer, 
+.madridstreetwear {
+	width:46%;
+}
+
+.madridstreetwear{
+	float:right;
+}
+
+.craftbeer {
+	float:left;
+}
+
+/* Float clearfix */
+
+.group:after{
+	content:"";
+	display:table;
+	clear: both;
+}
+
+
+.decoration {
+	width:120px;
+	margin:auto;
+	display:block;
+}
+
+
+
+/* good to always put background color, in case user does not load images. 
+background-size changes size of image relative to container (cover makes image scale to container)
+background-repeat decides if image repeats (repeats by default)
+background-position decides where image is placed relative to container
+*/
+
+.instagrammable {
+	background-color: #ffa949;
+	width:75%;
+	margin:50px auto;
+	text-align:center;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+	            #ffa949 url('instagrammable.jpg') no-repeat center;
+	background-size:cover;
+	padding-top:20%;
+	padding-bottom:20%;
+	box-shadow: 0 15px 20px -12px rgba(0,0,0,0.8);
+	border-radius:10px;
+
+
+}
+
+.instagrammable_text {
+	color:white;
+}
+
+
+
+/*****************
+PAGE INSPIRATION
+*******************/
+#gallery{
+margin:0;
+padding:0;
+list-style:none; /* remove all bullet points, remove style from list*/
+
+}
+
+/*lets stuff apear next to eachother, floating technique*/
+#gallery li{
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+    background-color: #f5f5f5;
+    color:#000000;
+
+
+}
+
+/* style the paragraphs in our gallery, subtitles*/
+#gallery li a p{
+marign: 0;
+padding: 5%;
+fontsize: 0.75em;
+color:#000000;
+
+
+}
+
+
+.image-inspiration{
+    display: block;
+    max-width: 150px;
+    margin: 0 auto 30px;
+    border-radius: 80%;
+}
+
+
+
+/*****************
+PAGE ABOUT 
+*******************/
+
+.profile-photo{
+    display: block;
+    max-width: 150px;
+    margin: 0 auto 30px;
+    border-radius: 100%;
+}
+
+
+
+
+/*****************
+PAGE CONTACT
+*******************/
+
+.contact-info{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.contact-info a{
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+.contact-info li.phone a{
+    background-image: url('../img/telephone.png');
+}
+
+
+.contact-info li.mail a{
+    background-image: url('../img/mail.png');
+}
+
+
+/*******
+SIGN UP FORUM 
+*******/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color:#000000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+/*****************
+COLOR
+*******************/
+
+/*site body */
+body{
+    background-color:#fff;
+    color:#000000;
+
+}
+ 
+  /*logo text */
+ header{
+     background:#ffffff;
+     border-color:#ffffff;
+     
+
+ }
+ /*logo text */
+ h1,h2{
+     color:#000000;
+ }
+
+ 
+   /*links */
+   a{
+    color:#000000;
+    text-decoration: none;
+   
+    }
+
+img {
+    max-width:100%; /*  fill size parrent container*/
+
+
+
+
+}
+
+ /*green navigation backgroun*/
+ nav{
+    background:#ffffff;
+}
+
+ 
+ /*give same color even when we hoover*/
+ nav a, nav a:visited {
+     color:#706b6a;
+
+
+ }
+ /*lining of navigation*/
+ nav a.selected, nav a:hover{
+     color: #000000;
+
+ }
+ 
